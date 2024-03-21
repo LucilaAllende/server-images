@@ -1,9 +1,8 @@
 import express, {Request, Response} from "express";
 
 const app = express();
-const port = 3000;
 
-app.set('port', process.env.PORT || port);
+app.set('port', process.env.PORT || 3000);
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
